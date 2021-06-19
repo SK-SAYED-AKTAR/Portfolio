@@ -1,0 +1,355 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>SK SAYED AKTAR | Portfolio</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="{% static 'assets/images/myImg.jpg' %}" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>SK SAYED AKTAR</h4>
+              <span style="font-size:15px;"><b>Python Developer</b></span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Hire Me</a></li>
+              </ul>
+            </nav>
+
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li style="backgroundColor:'red';">
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/sk-sayed-aktar-aa21aa1b8/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>&copy; SK SAYED AKTAR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+
+            {% if onSuccessSend %}
+              <div class="alert alert-success" role="alert">
+                Thanks for hiring me for this project, I will contact you soon !!!
+              </div>
+            {% endif %}
+
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span>
+              I have a rich experience working on Python Programming Language.
+              I have build many kind of Websites using Django and Flask.
+              Mostly familiar working with Python but also have a good knowledge on other Programming Language such as C, C++, C#, Java, Javascript, PHP and so on.
+              Currently I am pursuing my UG degree in B.Sc Computer Science at Trivenidevi Bhalotia College, KAZI NAZRUL UNIVERSITY, ASANSOL.
+            </span>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="{% static 'assets/images/left-image.jpg' %}" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Reflux HTML CSS Template</h4>
+                  <p>
+                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
+                    sed. Mauris viverra, erat non sagittis gravida, elit dui
+                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
+                    tincidunt quam vitae neque pharetra dignissim eget ut
+                    libero.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Sed sagittis rhoncus velit</h4>
+                  <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum fermentum
+                    eleifend nibh, vitae sodales elit finibus pretium.
+                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
+                    semper.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="{% static 'assets/images/right-image.jpg' %}" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My technical Skills</h2>
+            <div class="line-dec"></div>
+            <span>
+              I have a long experience and well knowledge in few domain, those are listed below !!!
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-md-6" onclick="window.location.href='{% url 'webDev' %}'">
+              <div class="service-item">
+<!--                <div class="first-service-icon service-icon"></div>-->
+                <div class="second-service-icon service-icon"></div>
+                <h4>Web Development</h4>
+                <p>
+                  I have developed many web development project using Django and Flask.
+                  I have also integrated RestAPI some of projects, so I have also good knowledge in RestAPI.<br>
+                  <b>For more details click here.</b>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6" onclick="window.location.href='{% url 'appDev' %}'">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>App Development</h4>
+                <p>
+                  I have developed many app development project using Java and C#.
+                  Some of my projects are online on Google Play Store like ChatSystem, Job vacancy finder etc.<br>
+                  <b>For more details click here.</b>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6" onclick="window.location.href='{% url 'webScrapping' %}'">
+              <div class="service-item">
+<!--                <div class="third-service-icon service-icon"></div>-->
+                <div class="second-service-icon service-icon"></div>
+                <h4>Web Scrapping</h4>
+                <p>
+                  Web Scrapping is one of my skill that I really love to do. Usually I used Python Programming language for scrapping
+                  or extracting. I have already developed many scripts for scrapping, example, Flipkart Scrapping,
+                  LinkedIn data scrapping etc.
+                  <br>
+                  <b>For more details click here.</b>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6" onclick="window.location.href='{% url 'mySkill' %}'">
+              <div class="service-item">
+<!--                <div class="fourth-service-icon service-icon"></div>-->
+                <div class="second-service-icon service-icon"></div>
+                <h4>Additional Skills</h4>
+                <p>
+                 Some of my best skill I have mentioned, in this section you can know about some additional skill that i have aquired.
+                 For example I have developed many projects in Python OpenCV, Tkinter and so on. I love to learn new things so it's also
+                  a important section.
+                 <br>
+                  <b>For more details click here !</b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Hire Me For A Project</h2>
+            <div class="line-dec"></div>
+            <span> Please fill the form correctly!<br>So that I can get notification from you about your project.</span>
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="?" method="POST">
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Full Name"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="projectName"
+                          type="text"
+                          class="form-control"
+                          id="text"
+                          placeholder="Project Name"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="skill"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Required skills for this project,  example:- OpenCV, MySQL"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="projectDesc"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Describe your project..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>

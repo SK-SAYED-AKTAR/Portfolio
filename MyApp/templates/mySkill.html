@@ -1,0 +1,132 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Additional Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+        .card{
+            width: 30rem;
+            height:35rem;
+        }
+        .btn{
+            position: absolute;
+            bottom: 2;
+        }
+
+        .card-img-top{
+            width: 100%;
+            height:50%;
+        }
+        h5{
+            font-size:22px;
+        }
+        li{
+            font-size:19px
+        }
+        .card-body{
+            background:linear-gradient(to right, #FCE655, #FFFBE5);
+        }
+        .total{
+            background: linear-gradient(cyan, #353F3E, #49FFB9);
+        }
+    </style>
+</head>
+<body>
+<div class="total">
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.google.com/search?q=sk+sayed+aktar" style="font-size:28px">
+            <img src="{% static 'assets/images/myImg.jpg' %}" alt="" width="50" height="50" class="d-inline-block align-text-top" style="border: 2px solid cyan; border-radius:40%;">
+            Additional Skills
+        </a>
+      </div>
+    </nav>
+
+    <div class="col d-flex justify-content-center ">
+        <table>
+            <tr>
+                <td>
+                <!-- Item start -->
+                    <div class="card mx-5 my-5">
+                        <img src="{% static 'assets/images/progland.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Programming Languages</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>JavaScript</li>
+                                    <li>C</li>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary disabled">Developed projects</a>
+                        </div>
+                    </div>
+                <!-- Item start -->
+                </td>
+                <td>
+                    <div class="card mx-5 my-5">
+                        <img src="{% static 'assets/images/db.jpg' %}" class="card-img-top" alt="..." style="background-color:rgba(10,10,10,0.9);">
+                        <div class="card-body">
+                            <h5 class="card-title">Databases</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>Firebase</li>
+                                    <li>SQLite3</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary disabled">Developed projects</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                <!-- Item start -->
+                    <div class="card mx-5">
+                        <img src="{% static 'assets/images/opencv.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Vision</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>OpenCV (Python)</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary disabled">Developed projects</a>
+                        </div>
+                    </div>
+                <!-- Item start -->
+                </td>
+                <td>
+                    <div class="card mx-5">
+                        <img src="{% static 'assets/images/tkinter.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">GUI Development</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Tkinter (Python)</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary disabled">Developed projects</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
